@@ -1,0 +1,458 @@
+body {
+    font-family: "Inter";
+}
+
+Header,
+main {
+    padding: 2% 5% 0% 5%;
+}
+
+/*NavBar*/
+.custom-width {
+    width: 120px;
+    height: 40px;
+}
+
+/*Intro section*/
+.intro-about,
+.intro-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .intro-about {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.intro-about-txt h1 {
+    font-size: 4.3em;
+    font-family: "Inter";
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 6%;
+}
+
+.intro-about-txt p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    max-width: 500px;
+    height: 168px;
+    top: 203px;
+    left: 8px;
+    color: rgba(84, 84, 84, 1);
+}
+
+.intro-about-img img {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .intro-about-img img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro-about-img img {
+        max-width: 200px;
+    }
+}
+
+.intro-number-numb {
+    color: rgba(84, 84, 84, 1);
+    padding: 5% 0;
+}
+
+.intro-number-txt button,
+.learnMore-section button {
+    margin-bottom: 10%;
+    padding: 2% 9% 2% 9%;
+    border-radius: 4px 0px 0px 0px;
+}
+
+.intro-number {
+    position: relative;
+}
+
+.intro-number-img {
+    position: relative;
+}
+
+.intro-number-img .square {
+    border-radius: 4px 0px 0px 0px;
+    border: 2px solid rgba(31, 31, 31, 1);
+    position: absolute;
+    right: 82%;
+    bottom: 60%;
+    padding: 13%;
+    z-index: 1;
+}
+
+.intro-number-img button {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    z-index: 3;
+    padding: 0 5.1%;
+    border-radius: 2px 0 0 0;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+
+}
+
+.intro-number-img img {
+    position: relative;
+    width: 90%;
+    z-index: 2;
+    right: 20%;
+    padding-left: 4%;
+}
+
+@media (max-width: 768px) {
+    .intro-number-img .square {
+        left: 8%;
+    }
+
+    .intro-number-img img {
+        left: 0;
+    }
+
+    .intro-number-img button {
+        right: 0;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .intro-number-img .square {
+        right: 15%;
+        bottom: 60%;
+        width: 25%;
+        height: 25%;
+    }
+}
+
+/*Our service section*/
+.services-section h1 {
+    font-size: 2.5rem;
+    padding: 8% 10%;
+}
+
+.service-dash {
+    position: relative;
+
+}
+
+.service-dash::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8%;
+    height: 2px;
+    background-color: black;
+}
+
+.services-section h5 {
+    font-weight: 600;
+    text-align: left;
+    color: rgba(31, 31, 31, 1);
+    padding-bottom: 7%;
+}
+
+.services-section p {
+    color: rgba(84, 84, 84, 1);
+    width: 150%;
+}
+
+.services-section img {
+    width: 18%;
+    height: 40%;
+}
+
+/*Learn more section*/
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.plus-sign {
+    font-size: 30px;
+}
+
+.learnMore-section {
+    padding: 10% 0;
+}
+
+.learnMore-txt h1 {
+    padding-bottom: 4%;
+}
+
+.learnMore-txt p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(84, 84, 84, 1);
+}
+
+.learnMore-section button {
+    margin-top: 7%;
+    border-radius: 4px;
+}
+
+.learnMore-section img {
+    height: 45%;
+    width: 45%;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 900px) {
+    .learnMore-section img {
+        height: 500px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .learnMore-section img {
+        height: 400px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .learnMore-section img {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+/*Design steps section*/
+
+.designSteps-section .steps img {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 1%;
+    position: relative;
+
+}
+
+.vl {
+    border-left: 1px solid rgba(155, 155, 155, 1);
+    height: 10%;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    left: 5%;
+    margin-top: 2%;
+}
+
+.step p {
+    color: rgba(84, 84, 84, 1);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2% 0;
+}
+
+.step h4 {
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.designSteps-section h1 {
+    padding-bottom: 8%;
+    font-weight: 600;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .designSteps-section .main-image {
+        height: 400px;
+        width: 500px;
+    }
+}
+
+@media (max-width:870) {
+    .designSteps-section .steps img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        padding: 60%;
+        position: relative;
+    }
+
+}
+
+
+
+/*Feedback section*/
+.feedback-section {
+    padding-top: 10%;
+}
+
+.card-body {
+    min-height: 400px;
+    background: rgba(31, 31, 31, 1);
+}
+
+.feedback-card h5 {
+    font-size: 5rem;
+}
+
+.feedback-section button {
+    border-radius: 0px;
+    background-color: rgba(241, 241, 241, 1);
+    font-size: 1rem;
+    border: none;
+    color: black;
+    margin-top: 3%;
+    padding: 3%;
+
+}
+
+.feedback-card .card-text {
+    font-weight: 450;
+}
+
+.feedback-card .place {
+    color: rgba(146, 146, 146, 1);
+
+}
+
+.feedback-section {
+    position: relative;
+
+}
+
+.feedback-card .feedback {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    padding-bottom: 20%;
+
+}
+
+@media (max-width:769.33px) {
+    .feedback-section .main-image {
+        height: 450px;
+    }
+
+    .feedback-card .feedback {
+        top: 38%;
+        left: 20%;
+    }
+
+}
+
+@media (max-width:571px) {
+
+    .feedback-section button {
+        padding: 5px;
+    }
+}
+
+/*Subscribe section*/
+
+.subscribe-section input {
+    padding: 1% 40% 1% 3%;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-sub {
+    position: relative;
+    top: 30px;
+}
+
+.material-icons {
+    color: grey;
+    position: absolute;
+    top: 10px;
+}
+
+.subscribe-section button {
+    position: absolute;
+    right: 21%;
+    top: 13%;
+    border-radius: 0;
+    padding: 0.5% 3%;
+}
+
+.subscribe-section .text {
+    margin: auto;
+    max-width: 600px;
+}
+
+.subscribe-section {
+    padding-top: 10%;
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width:926px) {
+    .subscribe-section {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width:750.33px) {
+    .subscribe-section {
+        padding-top: 80%;
+    }
+
+}
+
+@media (max-width:767.33px) {
+    .subscribe-section {
+        padding-top: 90%;
+    }
+
+    .subscribe-section button {
+        top: 10%;
+    }
+
+}
+
+@media (max-width:610.33px) {
+    .subscribe-section {
+        padding-top: 600px;
+    }
+
+}
+@media (max-width:560px) {
+    .subscribe-section button {
+        top: 7%;
+        right: 10%;
+    }
+
+}
+
+/*footer*/
+footer {
+    background-color: rgba(31, 31, 31, 1);
+    color: white;
+}
