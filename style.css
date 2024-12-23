@@ -464,8 +464,10 @@ main {
         font-size: x-small;
     }
     .material-icons {
-    top: 10px;
-}
+        color: grey;
+        position: absolute;
+        top: 10px;
+    }
 }
 
 /*footer*/
