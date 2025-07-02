@@ -14,7 +14,7 @@ A modern, responsive landing page for VivaDecor interior design services. Built 
 
 ## 🖼️ Preview
 
-![Interior Design Landing Page](https://nourmeena.github.io/Interior-design-landing-page/)
+[Interior Design Landing Page](https://nourmeena.github.io/Interior-design-landing-page/)
 
 ## 🛠️ Technologies Used
 
